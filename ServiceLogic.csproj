@@ -12,4 +12,8 @@
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.119" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PayLogic\PayLogic.csproj" />
+  </ItemGroup>
+
 </Project>

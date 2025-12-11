@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WinFormsApp2.Service
+﻿namespace WinFormsApp2.Service
 {
     public class ServiceOrder
     {
         public string ServiceName { get; set; }
         public int Quantity { get; set; }
-        public string Option { get; set; }       // Клас таксі, тип ескорту тощо
+        public string Option { get; set; }
         public string Notes { get; set; }
 
         public override string ToString()
         {
-            string s = $"{ServiceName} × {Quantity}";
+            string result = $"{ServiceName} × {Quantity}";
+
             if (!string.IsNullOrWhiteSpace(Option))
-                s += $" ({Option})";
+                result += $" ({Option})";
+
             if (!string.IsNullOrWhiteSpace(Notes))
-                s += $" [{Notes}]";
-            return s;
+                result += $" [{Notes}]";
+
+            return result;
         }
     }
-
 }

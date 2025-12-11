@@ -1,7 +1,5 @@
-﻿
-namespace WinFormsApp2
+﻿namespace WinFormsApp2
 {
-    
     public class ServiceModel
     {
         public string Name { get; set; }
@@ -17,8 +15,7 @@ namespace WinFormsApp2
 
         public override string ToString()
         {
-            return Name; // щоб ComboBox показував назву
+            return Name;
         }
     }
 }
-    
